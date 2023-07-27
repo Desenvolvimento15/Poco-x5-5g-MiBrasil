@@ -19,7 +19,9 @@
 body {
   font-family: "Camphor Pro", sans-serif;
 }
-
+div {
+  list-style: none;
+}
 .title {
   text-align: center;
   font-size: 7rem;
@@ -54,30 +56,37 @@ body {
   position: relative;
 }
 
-.icons-text {
-  font-size: 2.5rem;
-  text-align: center;
-  font-family: "Camphor Pro", sans-serif;
-  position: relative;
-  font-weight: 400;
-}
-
-.icons-tex {
-  font-size: 1rem;
-  text-align: center;
-  font-family: "Camphor Pro", sans-serif;
-  position: relative;
-  font-weight: 400;
-  color: #7f7f7f;
-}
-
 .icons-title {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   text-align: center;
   font-family: "Camphor Pro", sans-serif;
   position: relative;
   font-weight: 800;
-  color: #4e7ad6;
+  color: #ffcb05;
+  margin-top: 1rem;
+}
+
+.icons-text {
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: "Camphor Pro", sans-serif;
+  position: relative;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+.title-info {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.p-info {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 100;
 }
 
 .txt-preto {
@@ -117,6 +126,7 @@ body {
 .boxcolor5 {
   background-color: #284e7a;
 }
+
 /***************************grid*************************************/
 
 .grid-xiaomi {
@@ -126,17 +136,41 @@ body {
   gap: 5rem;
 }
 
-/***************************************************************/
+/*********************************************************************/
 
 @media (max-width: 920px) {
+  .grid-xiaomi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
   .title {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 800;
     font-family: "Camphor Pro", sans-serif;
     position: relative;
   }
 
+  .subtitle {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Camphor Pro", sans-serif;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .subtitle-01 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: "Camphor Pro", sans-serif;
+    position: relative;
+    margin-bottom: 1rem;
+  }
   .sub-title {
     text-align: center;
     font-size: 1.2rem;
@@ -146,60 +180,51 @@ body {
     margin-bottom: 1rem;
   }
 
-  .subtitle {
+  .p-center {
+    font-size: 1rem;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 800;
+    padding: 20px;
     font-family: "Camphor Pro", sans-serif;
     position: relative;
-    margin-bottom: 0.2rem;
   }
 
-  .p-center {
+  .p-center-01 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+    font-family: "Camphor Pro", sans-serif;
+    position: relative;
+  }
+
+  .icons-title {
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: "Camphor Pro", sans-serif;
+    position: relative;
+    font-weight: 800;
+    color: #ffcb05;
+    margin-top: 1rem;
+  }
+
+  .icons-text {
     font-size: 1.1rem;
     text-align: center;
     font-family: "Camphor Pro", sans-serif;
     position: relative;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 1rem;
   }
-
-  .p-center-text {
-    font-size: 1rem;
+  .title-info {
     text-align: center;
-    font-weight: 500;
-    font-family: "Camphor Pro", sans-serif;
-    position: relative;
-  }
-
-  .icons-text {
-    font-size: 1.2rem;
-    text-align: center;
-    font-family: "Camphor Pro", sans-serif;
-    position: relative;
-    font-weight: 400;
-  }
-
-  .icons-tex {
-    font-size: 0.8rem;
-    text-align: center;
-    font-family: "Camphor Pro", sans-serif;
-    position: relative;
-    font-weight: 400;
-    color: #7f7f7f;
-  }
-
-  .icons-title {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 2rem;
     font-weight: 800;
-    font-family: "Camphor Pro", sans-serif;
-    position: relative;
   }
 
-  .grid-xiaomi {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  .p-info {
     text-align: center;
-    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
   }
 }
