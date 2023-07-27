@@ -100,13 +100,23 @@ body {
 }
 
 .boxcolor2 {
-  background-color: #e4f6f9;
+  background-color: #173e64;
 }
 
-.boxcolor2 {
-  background-color: #000000;
+.boxcolor-black {
+  background-color: #000;
+}
+.boxcolor3 {
+  background-color: #060606;
 }
 
+.boxcolor4 {
+  background-color: #030304;
+}
+
+.boxcolor5 {
+  background-color: #284e7a;
+}
 /***************************grid*************************************/
 
 .grid-xiaomi {
